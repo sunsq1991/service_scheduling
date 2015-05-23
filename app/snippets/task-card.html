@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <td></td>
+    <td class="glyphicon-edit-td"><span class="glyphicon glyphicon-edit" ng-click="editTask(tsk)" aria-hidden="true" popover-placement="right" popover-template="editPopover.editTemplateUrl" popover-title="Edit" popover-enable="!editingTask" popover-trigger="click"></span></td>
+  </tr>
+  <tr>
+    <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span></td>
+    <td>{{ tsk.name }}</td>
+  </tr>
+  <tr>
+    <td><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
+    <td>{{ tsk.address }}</td>
+  </tr>
+  <tr>
+    <td><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></td>
+    <td>{{ tsk.description }}</td>
+  </tr>
+</table>

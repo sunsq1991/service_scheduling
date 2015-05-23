@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/paper-styles.html">
+
+<dom-module id="task-card">
+  <style>
+    table {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 10px;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  </style>
+  <template>
+    <table>
+      <tr>
+        <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span></td>
+        <td>Jams</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
+        <td>2969 Kingsway Dr</td>
+      </tr>
+      <tr>
+        <td><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></td>
+        <td>Fix Something</td>
+      </tr>
+    </table>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: "task-card",
+  });
+</script>

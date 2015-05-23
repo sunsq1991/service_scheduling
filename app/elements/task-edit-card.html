@@ -1,0 +1,14 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="task-card">
+  <template>
+    <strong class="example-chat-username">{{ msg.from }}</strong>
+        {{ msg.body }}
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: "task-card",
+  });
+</script>

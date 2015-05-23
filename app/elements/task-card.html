@@ -1,0 +1,76 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/paper-styles.html">
+
+<dom-module id="task-card">
+  <style>
+    table {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 10px;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .shadow {
+      margin: 5px;
+    }
+
+    .shadow-2dp {
+      @apply(--shadow-elevation-2dp);
+    }
+
+    .shadow-3dp {
+      @apply(--shadow-elevation-3dp);
+    }
+
+    .shadow-4dp {
+      @apply(--shadow-elevation-4dp);
+    }
+
+    .shadow-6dp {
+      @apply(--shadow-elevation-6dp);
+    }
+
+    .shadow-8dp {
+      @apply(--shadow-elevation-8dp);
+    }
+
+    .shadow-16dp {
+      @apply(--shadow-elevation-16dp);
+    }
+
+    .glyphicon-edit-td {
+      text-align: right;
+    }
+
+  </style>
+  <template>
+    <div class="shadow shadow-4dp">
+      <table>
+        <tr>
+          <td colspan="2" class="glyphicon-edit-td"><span class="glyphicon glyphicon-edit" ng-click="addMessage($event)" aria-hidden="true"></span></td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span></td>
+          <td>{{ tsk.name }}</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
+          <td>{{ tsk.address }}</td>
+        </tr>
+        <tr>
+          <td><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></td>
+          <td>{{ tsk.description }}</td>
+        </tr>
+      </table>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: "task-card",
+  });
+</script>

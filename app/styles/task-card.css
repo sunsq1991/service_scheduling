@@ -1,0 +1,21 @@
+.task-card {
+  margin: 5px;
+  background-color: #F7FE2E;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.task-card table {
+  display: block;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.task-card .glyphicon-edit-td {
+  width: 100%;
+  text-align: right;
+}
